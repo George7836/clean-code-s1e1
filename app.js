@@ -16,7 +16,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 
 //New task list item
 var createNewTaskElement=function(taskString){
-
+    
     var listItem=document.createElement("li");
 
     //input (checkbox)
@@ -63,7 +63,7 @@ var addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
-    var listItem=createNewTaskElement(taskInput.value);
+    var listItem=createNewTaskElement(taskInput.value); 
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
